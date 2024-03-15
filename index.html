@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h5 class="nav-title">Ma<span class="primary-color">r</span>gi</h5>
+                <ul>
+                <li><a href="#">Portfolio</a></li>
+               <!-- <li><a href="#">Blog</a></li> -->
+
+                <li> <a href="mailto:aminmargi19@gmail.com" class="primary-btn-color"id="hireMeLink">Hire Me</a></li>
+                    
+                </li>
+
+            </div>
+            
+                
+            </ul>
+
+        </nav>
+
+
+        <div class="banner">
+
+            <div class="banner-content">
+                <h3>Hi, I  am</h3>
+                <h1>Margi Amin</h1>
+               <!--<p>Shot what able cold new see hold.Friendly as an betrayed formerly <br> he. Morning because as to society behaved moments.</p>-->
+    
+               <button class="banner-btn" id="download-btn">Download CV</button>                
+               <script>
+                    document.getElementById('download-btn').addEventListener('click', function() {
+                      // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+                      var downloadLink = document.createElement('a');
+                      downloadLink.href = '/Users/margiamin/Desktop/resume/resume.pdf';
+                      downloadLink.download = 'resume.pdf';
+                      downloadLink.click();
+                    });
+                </script>
+                <!--<button class="contact-btn"> Contact </button>-->
+                <button class="contact-btn" onclick="displayContactInfo()">Contact</button>
+
+<script>
+    function displayContactInfo() {
+        // Replace the placeholder values with your actual phone number and email
+        var phoneNumber = "+8595291472";
+        var emailAddress = "aminmargi19@gmail.com";
+
+        // Create a string with the contact information
+        var contactInfo = "Phone: " + phoneNumber + "\nEmail: " + emailAddress;
+
+        // Display the contact information in an alert
+        alert(contactInfo);
+    }
+</script>
+
+            </div>
+
+           <!-- <img src="images/pj.jpg" alt="Banner profile Picture" class="banner-img"> -->
+
+        
+
+        </div>
+    </header>
+
+    <main>
+        <!-- This is for ABOUT Section -->
+        <section class="seciton-container">
+            <h3 class="section-title ">About Me</h3>
+            <p class="section-content">
+                Hi there! I'm Margi Amin from Union, KY. I'm a results-driven Computer Science enthusiast, with a strong background in research. My passion lies in software development engineering, where I've honed my skills in crafting reliable and efficient code. Through research endeavors, I've gained practical experience in developing high-performance software systems. I'm dedicated to continuous learning and look forward to contributing my expertise to innovative software solutions in my future roles. I am a graduate student at University of Cincinnati, USA with first class honours (3.79 GPA) in Computer Science and I am also a Research Assistant in the Computer Science Department working on Database Provenance.</p>
+
+            <div class="aboutinfo-container">
+                <div class="info">
+                    <p class="info-title">Name:</p>
+                   <p class="info-details"> Margi Amin 
+                   </p>
+
+                </div>
+                <div class="info">
+                    <p class="info-title">Email:</p>
+                   <p class="info-details"> aminmargi19@gmail.com
+                   </p>
+
+                </div>
+                <div class="info">
+                    <p class="info-title">Date of Birth:</p>
+                   <p class="info-details"> 19 February 2000
+
+                   </p>
+
+                </div>
+                <div class="info">
+                    <p class="info-title">From:</p>
+                   <p class="info-details"> Kentucky USA 
+                   </p>
+
+                </div>
+                
+            </div>
+
+        </section>
+         <!-- test-->
+         <section>
+            <div class="whatido-container">
+                <h3 class="whatido-title">TECHNICAL SKILLS</h3>
+                <p class="whatido-content">
+                    Proficient in the following programming languages, software, tools, and technologies:
+                </p>
+            </div>
+        
+            <div class="skill-content">
+                <div class="skill-box">
+                    <p class="skill-title">Python</p>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">C/C++</p>
+                </div>
+                <!-- Add more skill boxes as needed -->
+                <div class="skill-box">
+                    <p class="skill-title">MySQL</p>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">HTML</p>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">PHP</p>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-title">PostgresSQL</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- This is for TECHNICAL SKILLS Section 
+
+        <section>
+
+            <div class="whatido-container">
+
+                <h3 class="whatido-title">TECHNICAL SKILLS</h3>
+
+                <p class="whatido-content">
+                    My proficiency in each skill                
+                </p>
+
+            </div>
+
+        
+            <div class="skill-content">
+
+                <div class="skill-box" >
+                    
+                    <img src="./images/icons/js.png" alt="JS pic" class="logo-img">
+
+                <p class="skill-title">Vanilla JavaScript</p>
+
+                <p class="skill-details">
+                </p>
+
+                </div>
+                <div class="skill-box">
+                    <img src="./images/icons/react.png" alt="JS pic" class="logo-img">
+
+                <p class="skill-title">React</p>
+
+                <p class="skill-details">
+
+                    List skill/technologies here. <br> You can change the <br>icon above to any of the <br>1500+ FontAwesome 5 <br> free icons available. <br> Aenean commodo ligula eget dolor.
+                </p>
+
+                </div>
+                <div class="skill-box">
+                    <img src="./images/icons/nodejs.png" alt="JS pic" class="logo-img">
+
+                <p class="skill-title">Node JS</p>
+
+                <p class="skill-details">
+
+                    List skill/technologies here. <br> You can change the <br>icon above to any of the <br>1500+ FontAwesome 5 <br> free icons available. <br> Aenean commodo ligula eget dolor.
+                </p>
+
+                </div>
+
+
+                <div class="skill-box">
+                    <img src="./images/icons/mongo.png" alt="JS pic" class="logo-img">
+
+                <p class="skill-title">MongoDB</p>
+
+                <p class="skill-details">
+
+                    List skill/technologies here. <br> You can change the <br>icon above to any of the <br>1500+ FontAwesome 5 <br> free icons available. <br> Aenean commodo ligula eget dolor.
+                </p>
+
+                </div>
+
+
+            </div>
+        </section> -->
+
+<!-- Resume Section -->
+
+        <section>
+            <h3 class="section-title">A summary of My Resume</h3>
+
+            <div class="resume-conatiner">
+
+            
+                <div class="resume-colume">
+
+                    <h3 class="resume-colume-title">My Projects</h3>
+    
+                    <div class="resume-items">
+                        <h3 class="resume-degree">One-Time Pad</h3>
+
+                        <p class="resume-description"> Led the implementation of a DNS Cache Poisoning Attack project, overseeing setup and configuration of virtual machines while crafting a Python script for DNS spoofing.Successfully demonstrated DNS vulnerabilities, redirecting traffic to a controlled attacker machine, highlighting the critical importance of securing DNS systems.Enhanced awareness of network security risks, showcasing practical skills in deploying virtual environments and Python scripting to simulate and address real-world Cybersecurity threats.</p>   
+                    </div>
+    
+                    <hr>
+    
+                    
+    
+                    <div class="resume-items">
+                        <h3 class="resume-degree">DNS (Domain Name System) attack</h3>
+
+                        <p class="resume-description">Innovated a C++ and SQL-based technique for rapid Information Gain quantification, processing datasets of 100k to 10M records within 10 seconds. extensive testing with PostgreSQL and pgAdmin on real-world datasets. Authored a research paper using LaTeX and Overleaf on 'Exploring Provenance for Explainable Information Gain.' Additionally, developed a dynamic web application optimizing data pricing through HTML, CSS, JavaScript, and scripting techniques.</p>
+                    </p>
+    
+    
+                    </div>
+    
+                    <!--  <hr>
+                   
+    
+                   <div class="resume-items">
+                        <h3 class="resume-degree">Master in Computer Engineering</h3>
+    
+                        <h3 class="resume-institute">Harvard University / 2015 - 2017</h3>
+                        <p class="resume-description"></p>
+    
+                    </div> -->
+    
+                    
+                </div>
+
+
+    
+                <div class="resume-colume">
+    
+                     <h3 class="resume-colume-title">My Experience</h3>
+    
+                    <div class="resume-items">
+                        <h3 class="resume-degree">Research Assistant</h3>
+    
+                        <h3 class="resume-institute">University of Cincinnati/ 2023 - Present</h3>
+                        <p class="resume-description">Innovated a C++ and SQL-based technique for rapid Information Gain quantification, processing datasets of 100k to 10M records within 10 seconds. Extensive testing with PostgreSQL and pgAdmin on real-world datasets. Authored a research paper using LaTeX and Overleaf on 'Exploring Provenance for Explainable Information Gain.' Additionally, developed a dynamic web application optimizing data pricing through HTML, CSS, JavaScript, and scripting techniques.</p>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="resume-items">
+                        <h3 class="resume-degree">PHP Developer</h3>
+    
+                        <h3 class="resume-institute">Peanut Square LLC pvt .ltd / 2019 - 2021</h3>
+                        <p class="resume-description">Engineered 'Easy Admin,' an ERP system with Laravel, streamlining operations in finance, HR, supply chain, manufacturing, and more. Elevated company's online presence by revamping the website with HTML and CSS, adhering to modern design principles. Contributed to a sleek video player app using Symfony, ensuring seamless playback and an intuitive interface, boosting overall performance.</p>
+    
+                    </div>
+
+                
+
+            </div>
+
+            <div class="download-cv">
+                <button class="banner-btn" id="download-btn">Download CV</button>                
+                <script>
+                     document.getElementById('download-btn').addEventListener('click', function() {
+                       // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+                       var downloadLink = document.createElement('a');
+                       downloadLink.href = '/Users/margiamin/Desktop/resume/resume.pdf';
+                       downloadLink.download = 'resume.pdf';
+                       downloadLink.click();
+                     });
+                 </script>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+
+       <div class="footer-coloume">
+
+        <h3 class = "footer-title">Lets Connect</h3>
+
+        <p class="footer-content">Please fill out the form on this section to contact with me or call between <br> 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+
+        <a href="https://www.facebook.com/margi.amin.10"><img src="./images/icons/facebook.png" alt="facebook"></a>
+
+        <a href="https://www.instagram.com/menace_black"><img src="./images/icons/insta.png" alt="instagram"></a>
+        
+        <a href="https://twitter.com/amin_margi"><img src="./images/icons/twitter.png" alt="twitter"></a>
+
+
+       </div>
+       <div class="footer-column">
+        <h3 class="footer-title" id="footer-cotitle">Let’s Message me</h3>
+        <form class="form-input" action="send_email.php" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit" class="banner-btn">Submit</button>
+        </form>
+        
+      </div>
+      
+
+    <!--   <div class="footer-coloume">
+
+        <h3 class = "footer-title" id="footer-cotitle">Let’s Message me</h3>
+
+        <form class="form-input" action="">
+
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Name">
+
+            <textarea id="" name="" placeholder="Your massage"></textarea>
+
+            <button class="banner-btn">Submit</button>
+
+        </form>
+
+        
+
+
+       </div> -->
+
+
+
+
+    </footer>
+
+
+    
+</body>
+</html>
